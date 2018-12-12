@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="btnGuardarNuevaTarea">Guardar</string>
+    <string name="btnNuevaTarea">Nueva</string>
+    <string name="etDetalleTarea">Ingrese detalle de tarea</string>
+    <string name="errorDescripcionTareaEmpty">La descripción de tarea no puede estar vacía!</string>
+    <string name="errorTituloTareaEmpty">El título de tarea no puede estar vacío!</string>
+    <string name="errorFechaTareaEmpty">La fecha de tarea no puede estar vacía!</string>
+    <string name="idTarea">x</string>
+    <string name="btnVolverTarea">Volver</string>
+    <string name="btnGuardarCambiosTarea">Guardar</string>
+    <string name="TareaEliminada">Se ha eliminado la tarea</string>
+    <string name="tvLabelFechaIni">Inicio</string>
+    <string name="tvLabelFechaFin">Fin</string>
+    <string name="chbTerminarTarea">Terminar</string>
+    <string name="btnAcceptLogin">Ingresar</string>
+    <string name="btnCloseLogin">Salir</string>
+    <string name="etPasswordLoginHint">Contraseña</string>
+    <string name="etUserLoginHint">Usuario</string>
+    <string name="tvNewUserLogin">Crea una cuenta aquí</string>
+    <string name="tvLoginLogin">Ingreso</string>
+    <string name="userLoginIsEmpty">Debe ingresar un usuario</string>
+    <string name="passLoginIsEmpty">Debe ingresar una contraseña</string>
+    <string name="userLoginIsWrong">El usuario no existe</string>
+    <string name="passLoginIsWrong">La contraseña no es correcta</string>
+    <string name="swRecordarLogin">Recordar</string>
+    <string name="msgDialogEliminarTarea">¿Está seguro que desea eliminar la tarea?</string>
+    <string name="yes">Sí</string>
+    <string name="cancel">Cancelar</string>
+    <string name="msgDialogSobreEscribirTarea">Ya existe una tarea en esta lista con ese título. ¿Desea sobrescribirla?</string>
+</resources>
