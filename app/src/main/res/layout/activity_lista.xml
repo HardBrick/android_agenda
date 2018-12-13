@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnListasListas" />
+        app:layout_constraintTop_toBottomOf="@+id/etFechaDesde" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btnFloatAgregarTareaListas"
@@ -45,5 +45,43 @@
         app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <EditText
+        android:id="@+id/etFechaDesde"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/etFechaDesdeHint"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/etFechaHasta"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnListasListas" />
+
+    <EditText
+        android:id="@+id/etFechaHasta"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/etFechaHastaHint"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etFechaDesde"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarPorFecha" />
+
+    <Button
+        android:id="@+id/btnBuscarPorFecha"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etFechaHasta"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

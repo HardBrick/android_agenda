@@ -51,10 +51,10 @@ public class DetalleTareaActivity extends AppCompatActivity {
             etTituloTareaDetalle.setEnabled(false);
             etDescripcionTareaDetalle.setText(t.getDescripcion());
             etFechaTareaDetalle.setText(t.getFecha());
-            spnListasTareaDetalle.setSelection(spnListasMain.getSelectedItemPosition());
+            spnListasTareaDetalle.setSelection(1);
         }else{
             etTituloTareaDetalle.setEnabled(true);
-            spnListasTareaDetalle.setSelection(spnListasMain.getSelectedItemPosition());
+            spnListasTareaDetalle.setSelection(1);
         }
 
 
@@ -79,7 +79,11 @@ public class DetalleTareaActivity extends AppCompatActivity {
 
                  DatePickerDialog datePickerDialog = new DatePickerDialog(DetalleTareaActivity.this, new DatePickerDialog.OnDateSetListener() {
                      public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                         etFechaTareaDetalle.setText(dayOfMonth+"/"+(monthOfYear+1)+"/"+year);
+                         String diaDelMes = dayOfMonth+"";
+                         if((dayOfMonth+"").length()==1){
+                             diaDelMes = "0"+dayOfMonth;
+                         }
+                         etFechaTareaDetalle.setText(diaDelMes+"/"+(monthOfYear+1)+"/"+year);
                      }
 
                  }, anoDatePicker, mesDatePicker, diaDatePicker);

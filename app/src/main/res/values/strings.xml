@@ -28,4 +28,10 @@
     <string name="yes">Sí</string>
     <string name="cancel">Cancelar</string>
     <string name="msgDialogSobreEscribirTarea">Ya existe una tarea en esta lista con ese título. ¿Desea sobrescribirla?</string>
+    <string name="msgFechaHastaMenorQueFechaDesde">La fecha "hasta" no puede ser menor que la fecha "desde".</string>
+    <string name="msgFechaDesdeMayorQueFechaHasta">La fecha "desde" no puede ser mayor que la fecha "hasta".</string>
+    <string name="etFechaDesdeHint">Desde</string>
+    <string name="etFechaHastaHint">Hasta</string>
+    <string name="etTituloTareaHint">Ingrese título</string>
+    <string name="etFechaTareaHint">Fecha de tarea</string>
 </resources>
